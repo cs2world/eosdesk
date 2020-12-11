@@ -1,0 +1,6 @@
+#!/bin/sh
+# echo $MU to if it is right
+echo $MU
+# get the EOS chain info
+cleos $MU get info > chain.info
+
