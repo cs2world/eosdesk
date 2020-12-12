@@ -1,6 +1,6 @@
 #!/bin/sh
 # echo $MU to if it is right
-echo $MU
+# echo $MU
 # get the EOS chain info
-cleos $MU get info > chain.info
-
+cleos -u https://api.eosauthority.com get info > chain.info
+node check_chainid.js
